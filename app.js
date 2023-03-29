@@ -81,11 +81,11 @@ function GameController(
         /*  This is where we would check for a winner and handle that logic,
             such as a win message. */
 
-        function checkLine(a, b, c, d) {
+        const checkLine = (a, b, c, d) => {
             return ((a != 0) && (a == b) && (a == c) && (a == d));
         }
 
-        function checkWinner(board) {
+        const checkWinner = (board) => {
             //check down
             for (let r = 0; r < 3; r++) {
                 for (let c = 0; c < 7; c++) {
